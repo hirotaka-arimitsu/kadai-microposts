@@ -17,7 +17,7 @@ class MicropostsController < ApplicationController
   def destroy
     @micropost.destroy
     flash[:success] = 'メッセージを削除しました。'
-    redirect_to root_url
+    redirect_back
     #redirect_back(fallback_location: root_path)
   end
 
