@@ -48,7 +48,6 @@
         <%= @count_favorites %>
         </span></a></li>
     </ul>
-    
-    <%= render 'users', users: @followers %>
+    <%= render 'microposts/microposts', microposts: @favorite_microposts %>
   </div>
 </div>
